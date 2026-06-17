@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-white text-slate-800 antialiased font-sans;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-ehatod-500 px-7 py-3.5 text-base font-semibold text-white shadow-lg shadow-ehatod-500/25 transition hover:bg-ehatod-600 active:scale-[0.98];
+  }
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border-2 border-ehatod-500 px-7 py-3.5 text-base font-semibold text-ehatod-600 transition hover:bg-ehatod-50 active:scale-[0.98];
+  }
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold text-slate-700 transition hover:bg-slate-100;
+  }
+  .section {
+    @apply mx-auto w-full max-w-content px-5 sm:px-6 lg:px-8;
+  }
+  .eyebrow {
+    @apply inline-flex items-center gap-2 rounded-full bg-ehatod-50 px-4 py-1.5 text-sm font-semibold uppercase tracking-wide text-ehatod-600;
+  }
+  .input {
+    @apply w-full rounded-lg border border-slate-300 px-3.5 py-2.5 text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-ehatod-500 focus:ring-2 focus:ring-ehatod-500/20;
+  }
+}
