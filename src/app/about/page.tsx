@@ -39,7 +39,7 @@ export default function AboutPage() {
         <div className="section grid gap-8 sm:grid-cols-3">
           {stats.map((s) => (
             <div key={s.label} className="rounded-3xl bg-slate-50 p-8 text-center">
-              <div className="text-4xl font-extrabold text-ehatod-500">{s.value}</div>
+              <div className="text-4xl font-extrabold text-ehatod-600">{s.value}</div>
               <div className="mt-2 font-medium text-slate-600">{s.label}</div>
             </div>
           ))}
@@ -70,7 +70,7 @@ export default function AboutPage() {
           <h2 className="mt-4 text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">Serving and growing</h2>
           <div className="mt-8 flex flex-wrap justify-center gap-3">
             {serviceCities.map((c) => (
-              <span key={c} className="rounded-full bg-ehatod-50 px-5 py-2 font-semibold text-ehatod-600">{c}</span>
+              <span key={c} className="rounded-full bg-ehatod-50 px-5 py-2 font-semibold text-ehatod-700">{c}</span>
             ))}
           </div>
           <p className="mt-8 text-slate-600">More cities coming soon. Operated by {site.legalName}.</p>

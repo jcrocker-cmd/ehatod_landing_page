@@ -9,11 +9,18 @@ const MIN_MS = 1300
 
 export default function RouteTransitionLoader() {
   const pathname = usePathname()
-  const [visible, setVisible] = useState(true) // show on initial load / hard refresh / direct URL
-  const shownAt = useRef(Date.now())
+  // Nav-only (best for Core Web Vitals): don't cover content on first paint/refresh.
+  // To also show on initial load/refresh, set the initial state to `true`.
+  const [visible, setVisible] = useState(false)
+  const shownAt = useRef(0)
+  const firstRender = useRef(true)
 
-  // Hide after MIN_MS — runs on first mount AND on every route change.
+  // Hide after MIN_MS once a route change settles (skips the very first render).
   useEffect(() => {
+    if (firstRender.current) {
+      firstRender.current = false
+      return
+    }
     const remaining = Math.max(0, MIN_MS - (Date.now() - shownAt.current))
     const t = setTimeout(() => setVisible(false), remaining)
     return () => clearTimeout(t)

@@ -74,7 +74,7 @@ export default function TermsPage() {
         <section>
           <h2 className="text-xl font-bold text-slate-900">8. Changes &amp; contact</h2>
           <p className="mt-3">
-            We may update these Terms; continued use means acceptance. Questions? Email <a href={`mailto:${site.email}`} className="text-ehatod-600 underline">{site.email}</a>.
+            We may update these Terms; continued use means acceptance. Questions? Email <a href={`mailto:${site.email}`} className="text-ehatod-700 underline">{site.email}</a>.
           </p>
         </section>
       </article>

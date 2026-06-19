@@ -60,7 +60,7 @@ export default function PrivacyPage() {
         <section>
           <h2 className="text-xl font-bold text-slate-900">5. Your rights</h2>
           <p className="mt-3">
-            You may access, correct, or request deletion of your data, and object to certain processing. Contact us at <a href={`mailto:${site.email}`} className="text-ehatod-600 underline">{site.email}</a>.
+            You may access, correct, or request deletion of your data, and object to certain processing. Contact us at <a href={`mailto:${site.email}`} className="text-ehatod-700 underline">{site.email}</a>.
           </p>
         </section>
 
@@ -74,7 +74,7 @@ export default function PrivacyPage() {
         <section>
           <h2 className="text-xl font-bold text-slate-900">7. Contact</h2>
           <p className="mt-3">
-            Questions about this policy? Email <a href={`mailto:${site.email}`} className="text-ehatod-600 underline">{site.email}</a> or call {site.phone}.
+            Questions about this policy? Email <a href={`mailto:${site.email}`} className="text-ehatod-700 underline">{site.email}</a> or call {site.phone}.
           </p>
         </section>
       </article>

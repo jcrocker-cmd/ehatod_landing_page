@@ -37,7 +37,7 @@ export default function MerchantsPage() {
   return (
     <>
       {/* hero */}
-      <section className="bg-gradient-to-br from-ehatod-500 to-ehatod-600 py-16 text-white lg:py-24">
+      <section className="bg-gradient-to-br from-ehatod-600 to-ehatod-700 py-16 text-white lg:py-24">
         <div className="section grid items-center gap-12 lg:grid-cols-2">
           <div>
             <span className="inline-flex items-center gap-2 rounded-full bg-white/20 px-4 py-1.5 text-sm font-semibold text-white">eHatod Merchant</span>
@@ -48,16 +48,16 @@ export default function MerchantsPage() {
               List your store on eHatod and tap into new customers across your city. We bring the orders and handle delivery.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <a href="#apply" className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-7 py-3.5 text-base font-semibold text-ehatod-600 shadow-lg transition hover:bg-ehatod-50">Become a partner</a>
+              <a href="#apply" className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-7 py-3.5 text-base font-semibold text-ehatod-700 shadow-lg transition hover:bg-ehatod-50">Become a partner</a>
               <AppStoreButtons android={site.appStore.merchantAndroid} variant="light" />
             </div>
           </div>
           <div className="flex justify-center">
             <div className="w-full max-w-xs rounded-3xl bg-white p-8 text-center shadow-2xl">
-              <p className="text-sm font-semibold uppercase tracking-wide text-ehatod-500">Partners report</p>
+              <p className="text-sm font-semibold uppercase tracking-wide text-ehatod-700">Partners report</p>
               <p className="mt-2 text-5xl font-extrabold text-slate-900">+30%</p>
               <p className="mt-1 text-slate-500">more orders*</p>
-              <p className="mt-6 text-xs text-slate-400">*Indicative. Results vary by store and location.</p>
+              <p className="mt-6 text-xs text-slate-500">*Indicative. Results vary by store and location.</p>
             </div>
           </div>
         </div>
@@ -92,7 +92,7 @@ export default function MerchantsPage() {
           <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {steps.map((s) => (
               <div key={s.n} className="rounded-3xl bg-white p-7 shadow-sm">
-                <span className="text-5xl font-extrabold text-ehatod-100">{s.n}</span>
+                <span className="text-5xl font-extrabold text-ehatod-600">{s.n}</span>
                 <h3 className="mt-3 text-lg font-bold text-slate-900">{s.title}</h3>
                 <p className="mt-2 text-sm text-slate-600">{s.desc}</p>
               </div>
@@ -111,7 +111,7 @@ export default function MerchantsPage() {
             <ul className="mt-8 space-y-3">
               {requirements.map((r) => (
                 <li key={r} className="flex items-start gap-3">
-                  <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-ehatod-100 text-sm font-bold text-ehatod-600">✓</span>
+                  <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-ehatod-100 text-sm font-bold text-ehatod-700">✓</span>
                   <span className="text-slate-700">{r}</span>
                 </li>
               ))}

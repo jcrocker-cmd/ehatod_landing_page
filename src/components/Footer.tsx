@@ -43,9 +43,7 @@ export default function Footer() {
           <div className="lg:col-span-2">
             <Link href="/" className="flex items-center gap-2">
               <Image src={logoWhite} alt="eHatod" className="h-14 w-auto" />
-              <span className="text-2xl font-extrabold tracking-tight text-white">
-                e<span className="text-ehatod-400">Hatod</span>
-              </span>
+              <span className="text-2xl font-extrabold tracking-tight text-white">eHatod</span>
             </Link>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-slate-400">{site.description}</p>
             <div className="mt-5">
@@ -70,7 +68,7 @@ export default function Footer() {
           ))}
         </div>
 
-        <div className="mt-12 flex flex-col gap-4 border-t border-white/10 pt-6 text-sm text-slate-500 md:flex-row md:items-center md:justify-between">
+        <div className="mt-12 flex flex-col gap-4 border-t border-white/10 pt-6 text-sm text-slate-400 md:flex-row md:items-center md:justify-between">
           <p>© {year} {site.legalName}. All rights reserved.</p>
           <div className="flex items-center gap-4">
             <a href={site.social.facebook} aria-label="Facebook" className="hover:text-ehatod-400">

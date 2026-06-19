@@ -32,8 +32,9 @@ export default function Navbar() {
       }`}
     >
       <nav className="section flex h-16 items-center justify-between md:h-20">
-        <Link href="/" className="flex items-center" onClick={() => setOpen(false)}>
+        <Link href="/" className="flex items-center gap-2" onClick={() => setOpen(false)}>
           <Image src={logoOrange} alt="eHatod" priority className="h-12 w-auto md:h-14" />
+          <span className="text-2xl font-extrabold tracking-tight text-ehatod-600">eHatod</span>
         </Link>
 
         {/* desktop links */}
@@ -46,7 +47,7 @@ export default function Navbar() {
         </div>
 
         <div className="hidden items-center gap-3 md:flex">
-          <Link href="/riders" className="btn-ghost text-ehatod-600">
+          <Link href="/riders" className="btn-ghost text-ehatod-700">
             Become a rider
           </Link>
           <a href={site.appStore.consumerAndroid} className="btn-primary !py-2.5 !text-sm">

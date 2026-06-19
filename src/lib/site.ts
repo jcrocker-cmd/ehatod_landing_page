@@ -20,8 +20,9 @@ export const site = {
     merchantAndroid: '#', // TODO eHatod Merchant
   },
 
-  // Backend API base (fda-backend Laravel)
-  apiBase: process.env.NEXT_PUBLIC_API_BASE || 'http://localhost:8000/api',
+  // Backend API base (fda-backend Laravel) — ROOT url, no /api suffix.
+  // Same backend the Flutter apps use (single source of truth). Endpoints append /api/...
+  apiBase: process.env.NEXT_PUBLIC_API_BASE || 'https://fda-backend-vfmc.onrender.com',
 
   // Socials
   social: {

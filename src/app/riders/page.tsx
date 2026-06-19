@@ -20,7 +20,7 @@ const perks = [
 
 const requirements = [
   'At least 18 years old',
-  'Own a motorcycle, bicycle, car or tricycle',
+  'Own a motorcycle, bicycle or car',
   'Valid government ID',
   "Valid driver's license (for motor vehicles)",
   'Smartphone with mobile data',
@@ -54,11 +54,11 @@ export default function RidersPage() {
             </div>
           </div>
           <div className="flex justify-center">
-            <div className="w-full max-w-xs rounded-3xl bg-gradient-to-br from-ehatod-400 to-ehatod-600 p-8 text-center shadow-2xl">
-              <p className="text-sm font-semibold uppercase tracking-wide text-white/80">Earn up to</p>
+            <div className="w-full max-w-xs rounded-3xl bg-gradient-to-br from-ehatod-600 to-ehatod-700 p-8 text-center shadow-2xl">
+              <p className="text-sm font-semibold uppercase tracking-wide text-white">Earn up to</p>
               <p className="mt-2 text-5xl font-extrabold">₱1,500+</p>
-              <p className="mt-1 text-white/80">per day*</p>
-              <p className="mt-6 text-xs text-white/60">*Earnings vary by hours, location and demand.</p>
+              <p className="mt-1 text-white/90">per day*</p>
+              <p className="mt-6 text-xs text-white/80">*Earnings vary by hours, location and demand.</p>
             </div>
           </div>
         </div>
@@ -93,7 +93,7 @@ export default function RidersPage() {
           <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {steps.map((s) => (
               <div key={s.n} className="rounded-3xl bg-white p-7 shadow-sm">
-                <span className="text-5xl font-extrabold text-ehatod-100">{s.n}</span>
+                <span className="text-5xl font-extrabold text-ehatod-600">{s.n}</span>
                 <h3 className="mt-3 text-lg font-bold text-slate-900">{s.title}</h3>
                 <p className="mt-2 text-sm text-slate-600">{s.desc}</p>
               </div>
@@ -112,7 +112,7 @@ export default function RidersPage() {
             <ul className="mt-8 space-y-3">
               {requirements.map((r) => (
                 <li key={r} className="flex items-start gap-3">
-                  <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-ehatod-100 text-sm font-bold text-ehatod-600">✓</span>
+                  <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-ehatod-100 text-sm font-bold text-ehatod-700">✓</span>
                   <span className="text-slate-700">{r}</span>
                 </li>
               ))}

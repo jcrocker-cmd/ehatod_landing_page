@@ -97,7 +97,7 @@ export default function HomePage() {
             <span className="eyebrow">🛵 Fast · Fair · Local</span>
             <h1 className="mt-5 text-4xl font-extrabold leading-[1.05] tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
               eHatod na!<br />
-              <span className="text-ehatod-500">Food, padala &amp; pabili</span><br />
+              <span className="text-ehatod-600">Food, padala &amp; pabili</span><br />
               delivered to your door.
             </h1>
             <p className="mt-6 max-w-lg text-lg leading-relaxed text-slate-600">
@@ -115,12 +115,12 @@ export default function HomePage() {
 
           {/* phone mockup */}
           <div className="relative mx-auto w-full max-w-sm animate-fade-up lg:max-w-md">
-            <div className="relative aspect-[9/16] overflow-hidden rounded-[2.5rem] border-[10px] border-slate-900 bg-gradient-to-b from-ehatod-400 to-ehatod-600 shadow-2xl">
+            <div className="relative aspect-[9/16] overflow-hidden rounded-[2.5rem] border-[10px] border-slate-900 bg-gradient-to-b from-ehatod-600 to-ehatod-700 shadow-2xl">
               <div className="absolute left-1/2 top-3 h-5 w-28 -translate-x-1/2 rounded-full bg-slate-900" />
               <div className="flex h-full flex-col items-center justify-center gap-4 p-6 text-center text-white">
-                <Image src={logoWhite} alt="eHatod" className="h-40 w-auto" />
+                <Image src={logoWhite} alt="eHatod" priority className="h-40 w-auto" />
                 <p className="text-2xl font-extrabold">Your order is on the way</p>
-                <p className="text-white/80">Rider Mark · 6 mins away</p>
+                <p className="text-white/90">Rider Mark · 6 mins away</p>
                 <div className="mt-2 w-full rounded-2xl bg-white/15 p-4 backdrop-blur">
                   <div className="flex items-center justify-between text-sm">
                     <span>Lechon Manok + Rice</span><span className="font-bold">₱180</span>
@@ -139,7 +139,7 @@ export default function HomePage() {
           <div className="section grid grid-cols-2 gap-6 py-8 md:grid-cols-4">
             {stats.map((s) => (
               <div key={s.label} className="text-center">
-                <div className="text-3xl font-extrabold text-ehatod-500 sm:text-4xl">{s.value}</div>
+                <div className="text-3xl font-extrabold text-ehatod-600 sm:text-4xl">{s.value}</div>
                 <div className="mt-1 text-sm font-medium text-slate-500">{s.label}</div>
               </div>
             ))}
@@ -188,7 +188,7 @@ export default function HomePage() {
           <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {steps.map((step) => (
               <div key={step.n} className="relative rounded-3xl bg-white p-7 shadow-sm">
-                <span className="text-5xl font-extrabold text-ehatod-100">{step.n}</span>
+                <span className="text-5xl font-extrabold text-ehatod-600">{step.n}</span>
                 <h3 className="mt-3 text-lg font-bold text-slate-900">{step.title}</h3>
                 <p className="mt-2 text-sm leading-relaxed text-slate-600">{step.desc}</p>
               </div>
@@ -245,10 +245,10 @@ export default function HomePage() {
               <Link href="/riders" className="btn-primary mt-8">Apply as Rider</Link>
             </div>
             <div className="flex justify-center">
-              <div className="rounded-3xl bg-gradient-to-br from-ehatod-400 to-ehatod-600 p-10 text-center text-white shadow-2xl">
+              <div className="rounded-3xl bg-gradient-to-br from-ehatod-500 to-ehatod-700 p-10 text-center text-white shadow-2xl">
                 <div className="text-5xl font-extrabold">₱</div>
                 <p className="mt-2 text-lg font-semibold">Earn on your schedule</p>
-                <p className="mt-1 text-sm text-white/80">Cash out weekly</p>
+                <p className="mt-1 text-sm text-white/90">Cash out weekly</p>
               </div>
             </div>
           </div>
@@ -257,7 +257,7 @@ export default function HomePage() {
 
       {/* MERCHANT BAND */}
       <section className="section mt-8">
-        <div className="overflow-hidden rounded-3xl bg-gradient-to-br from-ehatod-500 to-ehatod-600 px-8 py-14 sm:px-14 lg:py-20">
+        <div className="overflow-hidden rounded-3xl bg-gradient-to-br from-ehatod-600 to-ehatod-700 px-8 py-14 sm:px-14 lg:py-20">
           <div className="grid items-center gap-10 lg:grid-cols-2">
             <div className="order-2 flex justify-center lg:order-1">
               <div className="rounded-3xl bg-white p-10 text-center shadow-2xl">
@@ -277,7 +277,7 @@ export default function HomePage() {
                 <li className="flex items-center gap-2">✓ Simple onboarding, fast go-live</li>
                 <li className="flex items-center gap-2">✓ Dashboard to manage orders</li>
               </ul>
-              <Link href="/merchants" className="mt-8 inline-flex items-center justify-center gap-2 rounded-full bg-white px-7 py-3.5 text-base font-semibold text-ehatod-600 shadow-lg transition hover:bg-ehatod-50">
+              <Link href="/merchants" className="mt-8 inline-flex items-center justify-center gap-2 rounded-full bg-white px-7 py-3.5 text-base font-semibold text-ehatod-700 shadow-lg transition hover:bg-ehatod-50">
                 Apply as Merchant
               </Link>
             </div>
@@ -325,10 +325,10 @@ export default function HomePage() {
           <div className="mt-14 grid gap-6 md:grid-cols-3">
             {testimonials.map((t) => (
               <figure key={t.name} className="rounded-3xl bg-white p-8 shadow-sm">
-                <div className="text-ehatod-400">★★★★★</div>
+                <div className="text-ehatod-700">★★★★★</div>
                 <blockquote className="mt-4 leading-relaxed text-slate-700">&quot;{t.quote}&quot;</blockquote>
                 <figcaption className="mt-6 flex items-center gap-3">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-ehatod-100 font-bold text-ehatod-600">{t.name.charAt(0)}</div>
+                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-ehatod-100 font-bold text-ehatod-700">{t.name.charAt(0)}</div>
                   <div>
                     <div className="font-semibold text-slate-900">{t.name}</div>
                     <div className="text-sm text-slate-500">{t.role}</div>
@@ -352,7 +352,7 @@ export default function HomePage() {
               <details key={f.q} className="group py-5">
                 <summary className="flex cursor-pointer list-none items-center justify-between gap-4 font-semibold text-slate-900">
                   {f.q}
-                  <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-slate-100 text-slate-500 transition group-open:rotate-45 group-open:bg-ehatod-500 group-open:text-white">+</span>
+                  <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-slate-100 text-slate-600 transition group-open:rotate-45 group-open:bg-ehatod-500 group-open:text-white">+</span>
                 </summary>
                 <p className="mt-3 leading-relaxed text-slate-600">{f.a}</p>
               </details>
@@ -363,7 +363,7 @@ export default function HomePage() {
 
       {/* APP DOWNLOAD CTA */}
       <section className="section pb-20 lg:pb-28">
-        <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-ehatod-500 via-ehatod-500 to-ehatod-600 px-8 py-16 text-center shadow-xl sm:px-14">
+        <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-ehatod-600 via-ehatod-600 to-ehatod-700 px-8 py-16 text-center shadow-xl sm:px-14">
           <div className="pointer-events-none absolute -right-16 -top-16 h-64 w-64 rounded-full bg-white/10 blur-2xl" />
           <h2 className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">Get the eHatod app today</h2>
           <p className="mx-auto mt-4 max-w-xl text-lg text-white/90">
