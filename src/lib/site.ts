@@ -1,16 +1,17 @@
 // Central site config — EDIT real values before launch.
 export const site = {
   name: 'eHatod',
-  legalName: 'eHatod Express Utility and Services',
+  legalName: 'eHatod Utility and Delivery Services', // DTI-registered 2026-06-26 (EHATOD UTILITY AND DELIVERY SERVICES)
   tagline: 'eHatod na! Fast, fair, local delivery.',
   description:
     'eHatod delivers food, padala and pabili across your city — fast, affordable and local.',
-  url: 'https://ehatod.com', // TODO: real production URL (used for SEO/canonical/OG)
+  url: 'https://ehatodexpress.com', // production domain (registered)
 
   // Contact
-  email: 'support@ehatod.com', // TODO: real email
+  email: 'support@ehatodexpress.com', // TODO: create this inbox
+  dpo: 'dpo@ehatodexpress.com', // Data Protection Officer contact (RA 10173) — TODO: create inbox + name the DPO person
   phone: '+63 900 000 0000', // TODO: real phone
-  address: 'Philippines', // TODO: real address
+  address: 'Brgy Canjulao, Jagna, Bohol 6308', // DTI-registered business address
 
   // App store links (consumer app = "eHatod")
   appStore: {
